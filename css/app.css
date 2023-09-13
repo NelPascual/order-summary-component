@@ -1,0 +1,188 @@
+:root {
+    --bright-blue: #3829e0;
+    --dark-blue: #1f2f56;
+    --desaturated-blue: #7280a7;
+    --pale-blue: #e0e8ff;
+    --very-pale-blue: #f5f7ff;
+    --white: #fff;
+}
+
+/* ++++++++++++++ GLOBAL STYLES ++++++++++++++ */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pale-blue);
+    background-image: linear-gradient(to bottom, transparent 50%, transparent 50%, transparent 100%), url(../img/pattern-background-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%, 63.9rem;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.container {
+    margin: auto;
+}
+
+.button {
+    background-color: var(--bright-blue);
+    border: none;
+    border-radius: 1rem;
+    height: 5rem;
+    margin: 2.4rem;
+    transition: background-color .2s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+/* ++++++++++++++ CARD ++++++++++++++ */
+
+.card-container {
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    margin: 2.4rem 0;
+    width: 32.8rem;
+}
+
+.hero img {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card-text h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin: 2.4rem 0 0 0;
+}
+
+.description {
+    color: var(--desaturated-blue);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 2rem 2.4rem;
+}
+
+.plan {
+    background-color: var(--very-pale-blue);
+    border-radius: 1rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    height: 8rem;
+    margin: 0 2.4rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.text,
+.change a,
+.cancel {
+    font-weight: 700;
+}
+
+.text,
+.price,
+.cancel {
+    font-size: 1.5rem;
+}
+
+.price {
+    color: var(--desaturated-blue);
+}
+
+.change {
+    font-size: 1.2rem;
+}
+
+.change a {
+    color: var(--bright-blue);
+    transition: color .2s ease-in-out;
+}
+
+.change a:hover {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+
+.payment {
+    padding: 0 0 2.4rem 0;
+}
+
+.cancel a {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+
+.cancel a:hover {
+    color: var(--dark-blue);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2.4rem 0;
+    text-align: center;
+}
+
+.attribution,
+.attribution a {
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+}
+
+.attribution a {
+    color: var(--bright-blue);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
